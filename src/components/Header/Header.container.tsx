@@ -13,6 +13,10 @@ const links = [
   {
     to: "/regular-form",
     title: "Regular form"
+  },
+  {
+    to: "/graphql",
+    title: "Graph QL"
   }
 ];
 

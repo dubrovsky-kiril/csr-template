@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "storybook": "start-storybook -p 6006 -c .storybook",
-    "start": "NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --progress",
+    "start": "NODE_ENV=development NODE_WEB_API_URL=https://48p1r2roz4.sse.codesandbox.io webpack-dev-server --config webpack/dev.config.js --progress",
     "lint": "tslint --project tsconfig.json --config tslint.json",
     "test": "jest --watch",
     "build": "NODE_ENV=production webpack --config webpack/prod.config.js --progress"
@@ -23,8 +23,12 @@
     ]
   },
   "dependencies": {
+    "apollo-boost": "^0.3.1",
+    "graphql": "^14.2.1",
+    "graphql-tag": "^2.10.1",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
+    "react-apollo": "^2.5.4",
     "react-dom": "^16.8.6",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0"

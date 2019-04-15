@@ -28,12 +28,6 @@ module.exports = merge(baseConfig, {
     port: 8000,
     hot: true,
     publicPath: "/",
-    historyApiFallback: true,
-    proxy: {
-      "/api/**": {
-        target: process.env.NODE_WEB_API_URL,
-        changeOrigin: true
-      }
-    }
+    historyApiFallback: true
   }
 });

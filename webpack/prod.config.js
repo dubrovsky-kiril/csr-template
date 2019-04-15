@@ -41,7 +41,7 @@ module.exports = merge(baseConfig, {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/](react|react-dom)[\\/](react-router|react-router-dom)[\\/](mobx|mobx-react)[\\/]/,
+          test: /[\\/]node_modules[\\/](react|react-dom)[\\/](react-router|react-router-dom)[\\/](mobx|mobx-react)[\\/](apollo-boost|graphql|graphql-tag|react-apollo)/,
           name: "vendors",
           chunks: "all"
         }

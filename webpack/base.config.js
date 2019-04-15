@@ -6,7 +6,8 @@ module.exports = {
   entry: [`${rootDir}/src/index.tsx`],
   plugins: [
     new webpack.DefinePlugin({
-      APP_MOD: JSON.stringify(process.env.NODE_ENV)
+      APP_MOD: JSON.stringify(process.env.NODE_ENV),
+      NODE_WEB_API_URL: JSON.stringify(process.env.NODE_WEB_API_URL)
     }),
     new HtmlWebPackPlugin({
       template: `${rootDir}/webpack/index-template.html`,
